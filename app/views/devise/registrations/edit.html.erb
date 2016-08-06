@@ -1,0 +1,70 @@
+
+<div class="row">
+  <div class="span4">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }, html: {class: "well"}) do |f| %>
+      <%= devise_error_messages! %>
+
+      <fieldset>
+        <legend>Edit <%= resource_name.to_s.humanize %></legend>
+
+        <div class="field">
+          <%= f.input :first_name, autofocus: true %><br />
+        </div>
+
+        <div class="field">
+          <%= f.input :last_name %><br />
+        </div>
+
+        <div class="field">
+          <%= f.input :profile_name %><br />
+        </div>
+
+        <div class="field">
+          <%= f.input :email %><br />
+        </div>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+        <div class="field">
+          <%= f.input :current_password, autocomplete: "off" %> <i>(we need your current password to confirm your changes)</i><br />
+         
+        </div>
+
+        <div class="field">
+        <br />
+          <%= f.input :new_password, autocomplete: "off" %> <i>(leave blank if you don't want to change it)</i><br />
+          <% if @minimum_password_length %>
+            
+            <em><%= @minimum_password_length %> characters minimum</em>
+          <% end %>
+        </div>
+
+       <br />
+        <div class="field">
+          <%= f.input :password_confirmation, autocomplete: "off" %><br />
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <%= f.button :submit, "Log in" %>
+      </div>
+      <br />
+      <%= link_to "Back", :back %>
+    <% end %>
+  </div>
+  <div class="span8">
+    <h2>You cant edit your Email and Password here</h2>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="well span4">
+    <fieldset>
+          <legend>Cancel my account</legend>
+      <p>Unhappy? <br /> <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+    </fieldset>
+  </div>
+</div>

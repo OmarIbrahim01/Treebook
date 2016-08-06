@@ -1,0 +1,9 @@
+I"ê(function() {
+  $(function() {
+    return $('.status').hover(function(event) {
+      return consol.log('GameOn');
+    });
+  });
+
+}).call(this);
+:ET
