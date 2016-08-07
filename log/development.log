@@ -36804,3 +36804,2111 @@ Processing by ProfilesController#show as HTML
   Rendered profiles/show.html.erb within layouts/application (25.4ms)
   [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
 Completed 200 OK in 477ms (Views: 472.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:02:15 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 262ms (Views: 270.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:02:19 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 268ms (Views: 267.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/statuses.self-d40d6dd4983499579cc002adaee208d15ff00e10c36083a41b72cf84fb873681.css?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 05:02:20 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:05:47 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 335ms (Views: 333.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/statuses.self-d40d6dd4983499579cc002adaee208d15ff00e10c36083a41b72cf84fb873681.css?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 05:05:48 +0200
+
+
+Started GET "/jimmy88" for ::1 at 2016-08-07 05:05:55 +0200
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"jimmy88"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."profile_name" = ? LIMIT 1[0m  [["profile_name", "jimmy88"]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ?  [["user_id", 5]]
+  Rendered profiles/show.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 237ms (Views: 234.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:08:27 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 238ms (Views: 251.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:08:54 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 254ms (Views: 263.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:08:55 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 269ms (Views: 265.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jimmy88" for ::1 at 2016-08-07 05:10:05 +0200
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"jimmy88"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."profile_name" = ? LIMIT 1  [["profile_name", "jimmy88"]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered profiles/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 217ms (Views: 226.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 05:10:10 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 278ms (Views: 280.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:10:12 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 242ms (Views: 242.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 05:10:14 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 293ms (Views: 292.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:41:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 3511ms (Views: 3439.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:42:02 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  Rendered statuses/index.html.erb within layouts/application (109.4ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x5800968>:0x9ae37e0>):
+    38: 
+    39: <div class="row">
+    40:   <div class="span4">
+    41:     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "well"}) do |f| %>
+    42:       
+    43:       <fieldset>
+    44:       <legend>Sign in</legend>
+  app/views/statuses/index.html.erb:41:in `_app_views_statuses_index_html_erb__51527857_81204048'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1517.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:43:05 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  Rendered statuses/index.html.erb within layouts/application (82.0ms)
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x5800968>:0x9c329d0>):
+    38: 
+    39: <div class="row">
+    40:   <div class="span4">
+    41:     <%= simple_form_for( as: resource_name, url: session_path(resource_name), html: {class: "well"}) do |f| %>
+    42:       
+    43:       <fieldset>
+    44:       <legend>Sign in</legend>
+  app/views/statuses/index.html.erb:41:in `_app_views_statuses_index_html_erb__51527857_81890376'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1391.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:44:55 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 273ms (Views: 272.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-d40d6dd4983499579cc002adaee208d15ff00e10c36083a41b72cf84fb873681.css?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:44:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:44:56 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:44:56 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:44:56 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:44:56 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:44:56 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:45:21 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 279ms (Views: 278.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/statuses.self-d40d6dd4983499579cc002adaee208d15ff00e10c36083a41b72cf84fb873681.css?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:45:22 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:46:53 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 465ms (Views: 463.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/statuses.self-56297973dc84a46f83e8551302120a318647e5cdbabe923ed8de533b6bd66509.css?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:46:54 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:47:14 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 508ms (Views: 507.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:47:14 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:47:14 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:47:14 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:47:14 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:47:15 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:48:14 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 272ms (Views: 270.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:48:14 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:49:57 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 255ms (Views: 253.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:49:57 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:49:57 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:49:58 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:51:28 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 251ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:51:29 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:51:44 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 257ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:51:44 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:51:45 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:51:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:51:45 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:55:02 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 593ms (Views: 591.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:55:03 +0200
+
+
+Started GET "/images/rail.jpg" for ::1 at 2016-08-07 19:55:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/rail.jpg"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (104.5ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (2038.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:55:15 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 278ms (Views: 277.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:55:16 +0200
+
+
+Started GET "/images/rails.jpg" for ::1 at 2016-08-07 19:55:16 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.jpg"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (1958.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:55:53 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (771.6ms)
+Completed 200 OK in 1551ms (Views: 1550.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 19:55:55 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:56:32 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:40: syntax error, unexpected ',', expecting ')'
+...ails.jpg", :alt => "rss feed"), class: "wlcm" );@output_buff...
+...                               ^):
+  app/views/statuses/index.html.erb:40: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1492.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:56:54 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 265ms (Views: 264.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 19:56:55 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 19:57:11 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:40: syntax error, unexpected '{', expecting =>
+...pg", :alt => "rss feed", :html{class: "wlcm"}) );@output_buf...
+...                               ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:40: syntax error, unexpected '}', expecting ')'
+...rss feed", :html{class: "wlcm"}) );@output_buffer.safe_appen...
+...                               ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/statuses/index.html.erb:40: syntax error, unexpected '{', expecting =>
+  app/views/statuses/index.html.erb:40: syntax error, unexpected '}', expecting ')'
+  app/views/statuses/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+  app/views/statuses/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/statuses/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1474.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:57:23 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/statuses/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+  app/views/statuses/index.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/statuses/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1526.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:57:35 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:47: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/statuses/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+  app/views/statuses/index.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/statuses/index.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1480.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:57:57 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+C:/Users/Omar/Desktop/treebook/app/views/statuses/index.html.erb:47: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/statuses/index.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+  app/views/statuses/index.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/statuses/index.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1483.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 19:58:06 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 280ms (Views: 280.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 19:58:07 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:16:28 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 274ms (Views: 273.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:16:28 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:16:28 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:16:29 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:17:02 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 327ms (Views: 326.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:17:02 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:17:30 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 277ms (Views: 277.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:17:31 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:17:57 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 279ms (Views: 279.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:17:57 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:17:57 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:17:58 +0200
+
+
+Started GET "/register" for ::1 at 2016-08-07 20:18:23 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (765.3ms)
+Completed 200 OK in 1120ms (Views: 1101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-08-07 20:18:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (93.8ms)
+Completed 200 OK in 467ms (Views: 428.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 20:19:45 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 293ms (Views: 292.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:19:46 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:19:57 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 291ms (Views: 290.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:19:58 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:20:38 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 391ms (Views: 390.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/application.self-a9059ba9b617fcfbb1bb03677efd3ef87ee8669b46acf4e1228f1d4935d191d5.css?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:20:39 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:20:54 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 421ms (Views: 419.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/application.self-46ce5c24acf1e64cd4053d5e6ba3818a5f6d2e153762af8d450a974216f15079.css?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:20:55 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:21:04 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 444ms (Views: 443.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-20a385f62eced265b051138b061595b79447226d61b951a2063a0445abe71041.css?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:21:05 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:21:19 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 356ms (Views: 354.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/application.self-29310b15ba6b9c9dea2777cbbc05d9a86210854b64942284c39553680d6412aa.css?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:21:19 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:21:28 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 373ms (Views: 372.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:21:28 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:21:28 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:21:28 +0200
+
+
+Started GET "/assets/application.self-17973359534d3696979508036945ff427ec2c45ccc88d739dcf343767b43c642.css?body=1" for ::1 at 2016-08-07 20:21:28 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:21:28 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:21:29 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:21:46 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 322ms (Views: 321.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:21:46 +0200
+
+
+Started GET "/assets/application.self-bcdceecebb9dc41f70f59c14904cf916f945c8180f7a4b7dcab712101d80bb09.css?body=1" for ::1 at 2016-08-07 20:21:46 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:21:47 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:22:18 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 387ms (Views: 385.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/application.self-38fdb57cc354d41e903396ebbda79902333c1ce8744f1be8ab2932eff5794450.css?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:22:18 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:22:31 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 395ms (Views: 394.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/application.self-48027dc2e3f63723109d9882f4da198d1cbb6b57476a45771c177d63f7b277b3.css?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:22:32 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:23:28 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 419ms (Views: 417.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/application.self-8620924c0a4f28204f7dd131da79e07b319068e4741179e13fb0f5ef5ebd7809.css?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:23:28 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:23:29 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:04 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 338ms (Views: 337.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/application.self-9f6db14a11018991e4a940748e68f5fc6d8924d43cebdf6d8a20a7d80c2f4e2f.css?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:04 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:05 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:14 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 391ms (Views: 390.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/application.self-4de00d61dda15f0cd3b8e1a762c45956d68d5b058c5d2ca33ed7e855c28404d0.css?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:15 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:19 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 291ms (Views: 289.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/application.self-4de00d61dda15f0cd3b8e1a762c45956d68d5b058c5d2ca33ed7e855c28404d0.css?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:19 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:32 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 526ms (Views: 525.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/application.self-3c386c65a655dfdd230e1bcdf6e7395ec703505ac022791165062d3cd6eb28f2.css?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:33 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:37 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 289ms (Views: 288.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/application.self-9f6db14a11018991e4a940748e68f5fc6d8924d43cebdf6d8a20a7d80c2f4e2f.css?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:38 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:25:57 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 414ms (Views: 413.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/application.self-b11bde369b5566481a2614d4ab89f139a8a471e97f6894016595a924231636b4.css?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:25:58 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:26:09 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 381ms (Views: 380.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/application.self-f2e7612c1923899375658ff37bc20ef567d823aa6d37b750cd7f79c156d9b199.css?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:26:09 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:26:10 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:26:10 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:26:10 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 20:26:16 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 445ms (Views: 444.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/application.self-5bca575ee0588538420f2ba811c42b9254192f3fc249cc768c80f82556ea7b68.css?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/statuses.self-85ae26af176bab439119e40412c5c7ad231e3ec56e64a37df7ec512bf04f536b.css?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 20:26:17 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 20:26:18 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 20:26:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 20:26:18 +0200
+
+
+Started GET "/assets/rails-a023bc8e4b072d6653c553aeb8fdb77d8994420eebe60b8283a307f08ddc2992.jpg" for ::1 at 2016-08-07 20:26:18 +0200
+
+
+Started GET "/login" for ::1 at 2016-08-07 20:26:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 387ms (Views: 389.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-08-07 20:26:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BKT/sIBOFTvGV9JwE823MnwspVTHOf6/Df6Xki47t9ruq+n5rFCmXCev5RNr3bkv1vO7ykJENWf6hauWqGNYDQ==", "user"=>{"email"=>"omar@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (7.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "omar@live.com"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-08-07 01:57:53.146004"], ["current_sign_in_at", "2016-08-07 18:26:40.606867"], ["sign_in_count", 32], ["updated_at", "2016-08-07 18:26:40.608820"], ["id", 1]]
+  [1m[36m (44.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 733ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 20:26:40 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (110.4ms)
+Completed 200 OK in 368ms (Views: 366.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/logout" for ::1 at 2016-08-07 20:26:58 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 20:26:58 +0200
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 234ms (Views: 244.5ms | ActiveRecord: 0.0ms)
