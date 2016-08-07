@@ -1,6 +1,13 @@
-<h1>Editing Status</h1>
+<% if current_user.present? && current_user.id == @status.user_id  %>
 
-<%= render 'form' %>
+	<h1>Editing Status</h1>
 
-<%= link_to 'Show', @status %> |
-<%= link_to 'Back', statuses_path %>
+	<%= render 'form' %>
+
+	<%= link_to 'Show', @status %> |
+	<%= link_to 'Back', statuses_path %>
+
+<% else %>
+<h1 class="error">Error 404 Page not Found</h1>
+
+<% end %>

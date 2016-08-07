@@ -33858,3 +33858,2799 @@ Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916ea
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-06 04:53:26 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 03:48:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (1167.2ms)
+Completed 200 OK in 2553ms (Views: 2489.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:48:05 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 268ms (Views: 266.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:48:06 +0200
+
+
+Started GET "/login" for ::1 at 2016-08-07 03:48:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (689.1ms)
+Completed 200 OK in 1050ms (Views: 1032.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-08-07 03:48:23 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJPNjjwCNyhTJPvXTXpxeZqQcse+eI2T4+s8NimRwWO9F62Xh15yg2grUEXKRmGksSIi+j8k69rounExFvHkcQ==", "user"=>{"email"=>"omar@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "omar@live.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-08-06 02:51:36.223772"], ["current_sign_in_at", "2016-08-07 01:48:23.644640"], ["sign_in_count", 30], ["updated_at", "2016-08-07 01:48:23.646595"], ["id", 1]]
+  [1m[36m (59.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 730ms (ActiveRecord: 67.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:48:24 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (69.3ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    18: 				<p><%= status.content %></p>
+    19: 				<div class="meta">
+    20: 					<%= link_to time_ago_in_words(status.created_at) + " ago", status %>
+    21: 					<% if current_user.present? && current_user.id == @status.user_id  %>
+    22: 						<span class="admin">
+    23: 						| <%= link_to "Edit", edit_status_path(status) %> |
+    24: 							<%= link_to "Delete", status, method: :delete, data: {confirm: "Are you sure you want to delete this status?"} %>
+  app/views/statuses/index.html.erb:21:in `block in _app_views_statuses_index_html_erb__449245243_46057512'
+  app/views/statuses/index.html.erb:7:in `_app_views_statuses_index_html_erb__449245243_46057512'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1557.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:49:05 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 280ms (Views: 277.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:49:05 +0200
+
+
+Started GET "/omaribrahim" for ::1 at 2016-08-07 03:49:33 +0200
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"omaribrahim"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."profile_name" = ? LIMIT 1  [["profile_name", "omaribrahim"]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 236ms (Views: 235.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-08-07 03:49:46 +0200
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 516ms (Views: 505.1ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:49:50 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (15.6ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 258ms (Views: 252.5ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/omaribrahim" for ::1 at 2016-08-07 03:49:51 +0200
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"omaribrahim"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."profile_name" = ? LIMIT 1[0m  [["profile_name", "omaribrahim"]]
+  [1m[35mStatus Load (15.6ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ?  [["user_id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (15.6ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 235ms (Views: 227.1ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:49:52 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 235ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:50:23 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 313ms (Views: 310.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:50:23 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:50:24 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 03:50:36 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 282ms (Views: 291.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:50:47 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 277ms (Views: 274.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:50:47 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:50:47 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:50:48 +0200
+
+
+Started GET "/statuses/13/edit" for ::1 at 2016-08-07 03:50:51 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered statuses/_form.html.erb (0.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 272ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:52:14 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 322ms (Views: 319.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:52:14 +0200
+
+
+Started GET "/statuses/7/edit" for ::1 at 2016-08-07 03:52:16 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered statuses/_form.html.erb (0.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 317ms (Views: 321.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 03:52:23 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered statuses/_form.html.erb (4.9ms)
+  Rendered statuses/edit.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 300ms (Views: 296.6ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/statuses/9" for ::1 at 2016-08-07 03:52:27 +0200
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lZMSKYjIjqBPx1fUKShGOFzGKuo2vWmUmEK7z1MB9lJPtwcceTRYcNuNqutgug+4lAad/joBfcfW9giESQWq1g==", "status"=>{"user_id"=>"1", "content"=>"This is m3lem jumbo speakin"}, "commit"=>"Update Status", "id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "statuses" SET "content" = ?, "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?[0m  [["content", "This is m3lem jumbo speakin"], ["user_id", 1], ["updated_at", "2016-08-07 01:52:27.505696"], ["id", 9]]
+  [1m[35m (62.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/statuses/9
+Completed 302 Found in 74ms (ActiveRecord: 63.5ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 03:52:27 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 266ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 03:53:59 +0200
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/controllers/statuses_controller.rb:76: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/statuses_controller.rb:76: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1427.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:54:09 +0200
+
+SyntaxError (C:/Users/Omar/Desktop/treebook/app/controllers/statuses_controller.rb:76: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/statuses_controller.rb:76: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1415.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:54:59 +0200
+
+ActionController::RoutingError (undefined local variable or method `current_user' for StatusesController:Class):
+  app/controllers/statuses_controller.rb:2:in `<class:StatusesController>'
+  app/controllers/statuses_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (21.5ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (1932.9ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 03:56:12 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered statuses/_form.html.erb (7.8ms)
+  Rendered statuses/edit.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 371ms (Views: 333.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:56:13 +0200
+
+
+Started PATCH "/statuses/9" for ::1 at 2016-08-07 03:56:19 +0200
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oaqYPjeyS9q4zOgAiy5Yu+MVTrOmXPw4/pZS8/SP/A97jo0Lxk6dCiyGFT/CvBE7K9X5p6rg6GuwIuG47ougiw==", "status"=>{"user_id"=>"1", "content"=>"This is m3lem jumbo speaking"}, "commit"=>"Update Status", "id"=>"9"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "statuses" SET "content" = ?, "updated_at" = ? WHERE "statuses"."id" = ?[0m  [["content", "This is m3lem jumbo speaking"], ["updated_at", "2016-08-07 01:56:19.545428"], ["id", 9]]
+  [1m[35m (119.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/statuses/9
+Completed 302 Found in 136ms (ActiveRecord: 121.1ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 03:56:19 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 277ms (Views: 274.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 03:56:45 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 287ms (Views: 283.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:56:45 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:56:47 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 248ms (Views: 248.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:56:55 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 299ms (Views: 295.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:56:55 +0200
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 03:57:04 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (0.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 292ms (Views: 299.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:57:34 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 275ms (Views: 272.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:57:35 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:57:36 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 505ms (Views: 505.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:57:39 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 283ms (Views: 281.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:57:39 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:57:40 +0200
+
+
+Started GET "/logout" for ::1 at 2016-08-07 03:57:43 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:57:44 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 234ms (Views: 243.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2016-08-07 03:57:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 415ms (Views: 412.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-08-07 03:57:52 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HQGzHFDhd2zP/Oo+96lBNYq1XqPCVBcdwSr/9hSqTk4DeXh162ddy4SSAB+jE827WlSHIKv4/nnaUZDGUcP52Q==", "user"=>{"email"=>"omar@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "omar@live.com"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-08-07 01:48:23.644640"], ["current_sign_in_at", "2016-08-07 01:57:53.146004"], ["sign_in_count", 31], ["updated_at", "2016-08-07 01:57:53.146982"], ["id", 1]]
+  [1m[35m (41.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 492ms (ActiveRecord: 43.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:57:53 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 261ms (Views: 259.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 03:57:58 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 228ms (Views: 227.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 03:57:59 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (6.8ms)
+  Rendered statuses/edit.html.erb within layouts/application (68.9ms)
+Completed 200 OK in 513ms (Views: 509.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:58:45 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 248ms (Views: 251.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 03:59:00 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 266ms (Views: 263.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 03:59:00 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 03:59:00 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 03:59:00 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 03:59:00 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 03:59:00 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 03:59:01 +0200
+
+
+Started GET "/logout" for ::1 at 2016-08-07 03:59:08 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:59:08 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 266ms (Views: 269.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2016-08-07 03:59:09 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 474ms (Views: 471.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-08-07 03:59:57 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PnKIqU2jIkhY30RIAmW8jjqo+Fv1wjt+VIAau+Lx0K5Xw5cASwOp0MThLHyK6krFjEKQZEf2b5iVfiAVjfWNLg==", "user"=>{"first_name"=>"Jim", "last_name"=>"Hopkins", "profile_name"=>"jimmy88", "email"=>"jim@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jim@live.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."profile_name" = 'jimmy88' LIMIT 1
+  [1m[36mSQL (7.8ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jim"], ["last_name", "Hopkins"], ["profile_name", "jimmy88"], ["email", "jim@live.com"], ["encrypted_password", "$2a$11$Xfxk9TCfYZEWq7hrUDajpOo2pH0l2/tnuu3dV220gFJ25XNaHdXaC"], ["created_at", "2016-08-07 01:59:57.587663"], ["updated_at", "2016-08-07 01:59:57.587663"]]
+  [1m[35m (75.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-08-07 01:59:57.677521"], ["current_sign_in_at", "2016-08-07 01:59:57.677521"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-08-07 01:59:57.680453"], ["id", 5]]
+  [1m[36m (50.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 789ms (ActiveRecord: 135.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 03:59:58 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 265ms (Views: 263.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/new" for ::1 at 2016-08-07 04:00:02 +0200
+Processing by StatusesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 298ms (Views: 305.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/statuses" for ::1 at 2016-08-07 04:00:20 +0200
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twmyXVtPDK9TyNuIjF4vAy4fuOdyb6UUPEkBD7+QolXeuK30Xe+HN8/2s7wE0dlImPXQ2MBb8fL9tzuh0JT/1Q==", "status"=>{"user_id"=>"5", "content"=>"This is Jim hopkins @kkk"}, "commit"=>"Create Status"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "This is Jim hopkins @kkk"], ["user_id", 5], ["created_at", "2016-08-07 02:00:20.359040"], ["updated_at", "2016-08-07 02:00:20.359040"]]
+  [1m[36m (57.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/statuses/14
+Completed 302 Found in 67ms (ActiveRecord: 60.6ms)
+
+
+Started GET "/statuses/14" for ::1 at 2016-08-07 04:00:20 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 246ms (Views: 241.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:22 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 241ms (Views: 252.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:26 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 281ms (Views: 279.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:00:27 +0200
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:00:33 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/_form.html.erb (0.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 322ms (Views: 329.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 04:00:41 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (3.9ms)
+  Rendered statuses/edit.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 302ms (Views: 297.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/statuses/9" for ::1 at 2016-08-07 04:00:46 +0200
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5tKYtKk29TKj8kLHCn/FgasBs+bH2XPrQ2JljTR8zZGPY4cdr5Z+qj/MKvOC8DPKHevb2XXtJw2CnF8jW3iQEQ==", "status"=>{"user_id"=>"5", "content"=>"This is m3lem jumbo speakin"}, "commit"=>"Update Status", "id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "statuses" SET "content" = ?, "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?  [["content", "This is m3lem jumbo speakin"], ["user_id", 5], ["updated_at", "2016-08-07 02:00:46.368264"], ["id", 9]]
+  [1m[36m (61.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/statuses/9
+Completed 302 Found in 76ms (ActiveRecord: 62.5ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 04:00:46 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 257ms (Views: 252.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:49 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 269ms (Views: 265.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:52 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 281ms (Views: 280.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:00:53 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:56 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 280ms (Views: 277.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:00:56 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:00:58 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 238ms (Views: 230.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:01:00 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 274ms (Views: 271.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:01:00 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:01:00 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:01:00 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:01:00 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:01:01 +0200
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:01:55 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 280ms (Views: 280.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:03:00 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/edit.html.erb within layouts/application (81.1ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x866f7d8>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_70476024'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1396.7ms)
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:03:15 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/edit.html.erb within layouts/application (83.0ms)
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x8467200>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_69336696'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1492.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 04:03:25 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 268ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 04:03:41 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/edit.html.erb within layouts/application (62.5ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x5ac9138>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_69336696'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1456.3ms)
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:03:48 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/edit.html.erb within layouts/application (77.6ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x590d6c0>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_69336696'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1436.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 04:03:54 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 290ms (Views: 289.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:03:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:03:55 +0200
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:03:58 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/edit.html.erb within layouts/application (78.1ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x4262bc8>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_69336696'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1393.8ms)
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:04:18 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/_form.html.erb (6.8ms)
+  Rendered statuses/edit.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 311ms (Views: 306.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:04:18 +0200
+
+
+Started GET "/" for ::1 at 2016-08-07 04:04:27 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 246ms (Views: 245.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-07 04:04:30 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 296ms (Views: 293.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:04:31 +0200
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:04:35 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 283ms (Views: 287.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:04:40 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 248ms (Views: 243.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:06:29 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (89.9ms)
+Completed 500 Internal Server Error in 294ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d684e8>:0x887aed0>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_71551992'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1400.6ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:10:27 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (84.0ms)
+Completed 500 Internal Server Error in 301ms (ActiveRecord: 3.9ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x69cc0f0>:0x69c28e0>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_55402320'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1394.8ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:10:41 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (85.0ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x69cc0f0>:0x65d3c48>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_53370216'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1418.2ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:11:07 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (86.9ms)
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x69cc0f0>:0x8b15740>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_72917340'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1393.8ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:13:52 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (86.0ms)
+Completed 500 Internal Server Error in 345ms (ActiveRecord: 4.9ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d336e8>:0x7d30e98>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_72917340'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1407.5ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:14:07 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (88.9ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d336e8>:0x7dd3000>):
+    1: <% if current_user.present? && current_user.id == status.user_id  %>
+    2: 
+    3: 	<h1>Editing Status</h1>
+    4: 
+  app/views/statuses/edit.html.erb:1:in `_app_views_statuses_edit_html_erb___123541113_65965560'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1488.5ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:14:19 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (53.7ms)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (The partial name (404) is not a valid Ruby identifier; make sure your partial name starts with underscore, and is followed by any combination of letters, numbers and underscores.):
+     8: 	<%= link_to 'Back', statuses_path %>
+     9: 
+    10: <% else %>
+    11: <%= render '404' %>
+    12: 
+    13: <% end %>
+  app/views/statuses/edit.html.erb:11:in `_app_views_statuses_edit_html_erb___123541113_95109720'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1437.7ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:15:23 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (87.9ms)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `render_404' for #<#<Class:0x7d336e8>:0xc18dbc0>):
+     8: 	<%= link_to 'Back', statuses_path %>
+     9: 
+    10: <% else %>
+    11: <%= render_404 %>
+    12: 
+    13: <% end %>
+  app/views/statuses/edit.html.erb:11:in `_app_views_statuses_edit_html_erb___123541113_101475660'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1399.6ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:16:08 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (70.3ms)
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `render_404' for #<Class:0x6b4fe70>):
+     8: 	<%= link_to 'Back', statuses_path %>
+     9: 
+    10: <% else %>
+    11: <%= Status.render_404 %>
+    12: 
+    13: <% end %>
+  app/views/statuses/edit.html.erb:11:in `_app_views_statuses_edit_html_erb___123541113_45416292'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1411.4ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:16:15 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (87.9ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `status' for #<#<Class:0x7d336e8>:0xb117b80>):
+     8: 	<%= link_to 'Back', statuses_path %>
+     9: 
+    10: <% else %>
+    11: <%= status.render_404 %>
+    12: 
+    13: <% end %>
+  app/views/statuses/edit.html.erb:11:in `_app_views_statuses_edit_html_erb___123541113_92845380'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1400.6ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:16:24 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (86.0ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `statuses' for #<#<Class:0x7d336e8>:0xbb65570>):
+     8: 	<%= link_to 'Back', statuses_path %>
+     9: 
+    10: <% else %>
+    11: <%= statuses.render_404 %>
+    12: 
+    13: <% end %>
+  app/views/statuses/edit.html.erb:11:in `_app_views_statuses_edit_html_erb___123541113_98236824'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (1502.2ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:19:16 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 263ms (Views: 258.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:19:16 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:19:17 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:19:17 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:20:27 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 335ms (Views: 290.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:20:27 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:20:28 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:20:37 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 263ms (Views: 256.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:20:37 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:20:50 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 248ms (Views: 243.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/statuses.self-700ff23c082cf5e1f3067324a388c0cb937fbf8eb0a4b11f9e9711f90a8b1696.css?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:20:51 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:21:39 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1361ms (Views: 1356.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:21:40 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/statuses.self-2cf727ecb96a85950003c957682670f82eeba84b66bb0ec1d060c2e81d755ffc.css?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:21:41 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:22:08 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1061ms (Views: 1057.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/statuses.self-0924868df465a87e14fdf9660137ee5241af3afe344bbebce969e8d3423d4288.css?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:22:09 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:22:17 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 721ms (Views: 713.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/statuses.self-5c44ed43c7efeab00283b151b0a4d2f02bab811c38f0e3c96c3ade1c87acdad9.css?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:22:18 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:22:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:22:19 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:22:31 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 382ms (Views: 377.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:22:31 +0200
+
+
+Started GET "/assets/statuses.self-9ca49f4f7cf9d0ababd3ab90ecc473eb85a4c599df0c98bd5d1c681336a4207a.css?body=1" for ::1 at 2016-08-07 04:22:31 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:22:32 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:23:13 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 431ms (Views: 424.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/statuses.self-10dd66f66065b4e6d082646dc6ac458b607c81123568a8bc912e47b828b3fc2a.css?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:23:14 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:23:21 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 463ms (Views: 458.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/statuses.self-350bcf70e211545bce84239caebb018a4d04014177cae9cd9aa6e39ea1353b1d.css?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:23:22 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:23:29 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 410ms (Views: 405.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/statuses.self-67d5e8453bc30602e44a12f49aed5bae2596c0518310aa99141a25d82e996ce7.css?body=1" for ::1 at 2016-08-07 04:23:29 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:23:29 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:23:30 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:23:40 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 472ms (Views: 465.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/statuses.self-09bf60ae57e93c1e91d36e2d6f7559a7096aaab5d18ca9a0ca39a3b2741ed194.css?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:23:41 +0200
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:26:01 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 256ms (Views: 248.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/statuses.self-09bf60ae57e93c1e91d36e2d6f7559a7096aaab5d18ca9a0ca39a3b2741ed194.css?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:26:02 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:26:03 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 322ms (Views: 315.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/6" for ::1 at 2016-08-07 04:26:05 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 219ms (Views: 227.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jimmy88" for ::1 at 2016-08-07 04:26:53 +0200
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"jimmy88"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."profile_name" = ? LIMIT 1  [["profile_name", "jimmy88"]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ?[0m  [["user_id", 5]]
+  Rendered profiles/show.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 232ms (Views: 236.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:26:56 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 237ms (Views: 237.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:27:02 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 305ms (Views: 303.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/statuses.self-09bf60ae57e93c1e91d36e2d6f7559a7096aaab5d18ca9a0ca39a3b2741ed194.css?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:27:03 +0200
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 04:27:04 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (0.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 284ms (Views: 282.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/statuses/9" for ::1 at 2016-08-07 04:27:10 +0200
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vDTNOKcCSWav+08v1js4ij0NUFxN1cR2YJTL/0uP70DVhdKRoaLC/jPFJxtetM7Bi+c4Y//hkJChavFRJIuywA==", "status"=>{"user_id"=>"5", "content"=>"This is m3lem jumbo speaking"}, "commit"=>"Update Status", "id"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "statuses" SET "content" = ?, "updated_at" = ? WHERE "statuses"."id" = ?  [["content", "This is m3lem jumbo speaking"], ["updated_at", "2016-08-07 02:27:10.936485"], ["id", 9]]
+  [1m[36m (53.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/statuses/9
+Completed 302 Found in 74ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 04:27:11 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 250ms (Views: 245.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/9/edit" for ::1 at 2016-08-07 04:27:18 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 295ms (Views: 295.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/8/edit" for ::1 at 2016-08-07 04:27:23 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 247ms (Views: 242.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/5/edit" for ::1 at 2016-08-07 04:27:29 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Status with 'id'=5):
+  app/controllers/statuses_controller.rb:68:in `set_status'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1425.0ms)
+
+
+Started GET "/statuses/4/edit" for ::1 at 2016-08-07 04:27:36 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 4]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Status with 'id'=4):
+  app/controllers/statuses_controller.rb:68:in `set_status'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1423.1ms)
+
+
+Started GET "/statuses/1/edit" for ::1 at 2016-08-07 04:27:43 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Status with 'id'=1):
+  app/controllers/statuses_controller.rb:68:in `set_status'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1433.8ms)
+
+
+Started GET "/statuses/10/edit" for ::1 at 2016-08-07 04:27:48 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 10]]
+Completed 404 Not Found in 5ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Status with 'id'=10):
+  app/controllers/statuses_controller.rb:68:in `set_status'
+
+
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/Ruby22/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (1429.9ms)
+
+
+Started GET "/statuses/7/edit" for ::1 at 2016-08-07 04:27:53 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 244ms (Views: 241.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/7/edit" for ::1 at 2016-08-07 04:28:17 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered statuses/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 565ms (Views: 558.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/statuses.self-d40d6dd4983499579cc002adaee208d15ff00e10c36083a41b72cf84fb873681.css?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/bootstrap.self-41f48d6bccb446805945c866106decd6ab3f41d3622e6a0206a49e4e0c3d2e95.css?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/profiles.self-dddb1e16e23b3333cb2631839fac6d6fcb347aea5b7903d55c0a85bca1b22936.css?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/application.self-bdbf6602fbfd877bc810bf5756a64e33f2013eb3dcf5aa10ebb914b5ecd0c648.css?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/bootstrap.self-d4f9348957de263ec7f39a99d4d7bf6109b3d389acc6bd22a890f7d0e9b02ee5.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/statuses.self-837786b311a91428a344c526a5f6323163e1fa66916eaa10929301e8a77d0dfa.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-08-07 04:28:18 +0200
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:29:07 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 282ms (Views: 281.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statuses/6" for ::1 at 2016-08-07 04:29:09 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 226ms (Views: 225.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:29:11 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 294ms (Views: 301.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/statuses/9" for ::1 at 2016-08-07 04:29:14 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 244ms (Views: 241.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:29:16 +0200
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 280ms (Views: 276.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/statuses/14" for ::1 at 2016-08-07 04:29:19 +0200
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 240ms (Views: 240.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses/14/edit" for ::1 at 2016-08-07 04:29:21 +0200
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered statuses/_form.html.erb (15.6ms)
+  Rendered statuses/edit.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 299ms (Views: 295.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses" for ::1 at 2016-08-07 04:29:24 +0200
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  [1m[36mUser Load (15.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered statuses/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 255ms (Views: 244.1ms | ActiveRecord: 15.6ms)
