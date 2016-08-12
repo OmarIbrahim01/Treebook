@@ -11,3 +11,9 @@ jim:
   profile_name: "jimhop88"
   email: "jimhop@live.com"
   
+
+mike:
+  first_name: "Mike"
+  last_name: "TheFrog"
+  profile_name: "mikethefrog"
+  email: "mike@live.com"
