@@ -3573,3 +3573,1436 @@ Processing by ProfilesController#show as HTML
   Rendered profiles/show.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:27:36', '2016-08-12 06:27:36', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:27:36', '2016-08-12 06:27:36', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:27:36', '2016-08-12 06:27:36', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:27:36', '2016-08-12 06:27:36', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:27:36', '2016-08-12 06:27:36', 1027431151)[0m
+  [1m[35m (71.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 140ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 61ms (Views: 53.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (150.4ms)
+  Rendered statuses/edit.html.erb within layouts/application (181.7ms)
+Completed 200 OK in 215ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "MyText"], ["created_at", "2016-08-12 06:27:37.231759"], ["updated_at", "2016-08-12 06:27:37.231759"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (12.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 1027431151], ["created_at", "2016-08-12 06:27:37.280594"], ["updated_at", "2016-08-12 06:27:37.280594"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (20.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:30:27', '2016-08-12 06:30:27', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:30:27', '2016-08-12 06:30:27', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:30:27', '2016-08-12 06:30:27', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:30:27', '2016-08-12 06:30:27', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:30:27', '2016-08-12 06:30:27', 1027431151)[0m
+  [1m[35m (68.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 118ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 1027431151], ["created_at", "2016-08-12 06:30:28.277790"], ["updated_at", "2016-08-12 06:30:28.277790"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (5.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "MyText"], ["created_at", "2016-08-12 06:30:28.297325"], ["updated_at", "2016-08-12 06:30:28.297325"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (7.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 44ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (126.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (154.3ms)
+Completed 200 OK in 180ms (Views: 178.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:31:07', '2016-08-12 06:31:07', 980190962, 14887631)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:31:07', '2016-08-12 06:31:07', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:31:07', '2016-08-12 06:31:07', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:31:07', '2016-08-12 06:31:07', 14887631)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:31:07', '2016-08-12 06:31:07', 1027431151)[0m
+  [1m[35m (78.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 1027431151], ["created_at", "2016-08-12 06:31:07.693528"], ["updated_at", "2016-08-12 06:31:07.693528"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (20.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "statuses" WHERE "statuses"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "MyText"], ["created_at", "2016-08-12 06:31:07.752132"], ["updated_at", "2016-08-12 06:31:07.752132"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered statuses/_form.html.erb (123.1ms)
+  Rendered statuses/edit.html.erb within layouts/application (153.3ms)
+Completed 200 OK in 265ms (Views: 264.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:35:59', '2016-08-12 06:35:59', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:35:59', '2016-08-12 06:35:59', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:35:59', '2016-08-12 06:35:59', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:35:59', '2016-08-12 06:35:59', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:35:59', '2016-08-12 06:35:59', 1027431151)[0m
+  [1m[35m (62.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:35:59.359230"], ["updated_at", "2016-08-12 06:35:59.359230"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 37ms (ActiveRecord: 1.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 130ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:35:59.558484"], ["updated_at", "2016-08-12 06:35:59.558484"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (116.2ms)
+  Rendered statuses/edit.html.erb within layouts/application (145.5ms)
+Completed 200 OK in 169ms (Views: 167.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:42:11', '2016-08-12 06:42:11', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:42:11', '2016-08-12 06:42:11', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:42:11', '2016-08-12 06:42:11', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:42:11', '2016-08-12 06:42:11', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:42:11', '2016-08-12 06:42:11', 1027431151)[0m
+  [1m[35m (69.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:42:11.657475"], ["updated_at", "2016-08-12 06:42:11.657475"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 37ms (ActiveRecord: 1.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (345.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "statuses" SET "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?  [["user_id", 1027431151], ["updated_at", "2016-08-12 06:42:12.038399"], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:42:12.060864"], ["updated_at", "2016-08-12 06:42:12.060864"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (7.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 129ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (127.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (156.3ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:44:50', '2016-08-12 06:44:50', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:44:50', '2016-08-12 06:44:50', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:44:50', '2016-08-12 06:44:50', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:44:50', '2016-08-12 06:44:50', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:44:50', '2016-08-12 06:44:50', 1027431151)[0m
+  [1m[35m (64.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "statuses" WHERE "statuses"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 19ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1  [["user_id", 14887631], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:44:50.479781"], ["updated_at", "2016-08-12 06:44:50.479781"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1[0m  [["user_id", 14887631], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "statuses" SET "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?[0m  [["user_id", 1027431151], ["updated_at", "2016-08-12 06:44:50.502245"], ["id", 980190962]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+  [1m[36m (54.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 126ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:44:50.738612"], ["updated_at", "2016-08-12 06:44:50.738612"]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (19.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (146.5ms)
+  Rendered statuses/edit.html.erb within layouts/application (173.9ms)
+Completed 200 OK in 199ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:46:35', '2016-08-12 06:46:35', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:46:35', '2016-08-12 06:46:35', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:46:35', '2016-08-12 06:46:35', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:46:35', '2016-08-12 06:46:35', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:46:35', '2016-08-12 06:46:35', 1027431151)[0m
+  [1m[35m (84.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1[0m  [["user_id", 14887631], ["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "statuses" SET "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?[0m  [["user_id", 1027431151], ["updated_at", "2016-08-12 06:46:35.553888"], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 43ms (ActiveRecord: 2.0ms)
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:46:35.575376"], ["updated_at", "2016-08-12 06:46:35.575376"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1  [["user_id", 14887631], ["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:46:35.739467"], ["updated_at", "2016-08-12 06:46:35.739467"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (128.9ms)
+  Rendered statuses/edit.html.erb within layouts/application (156.3ms)
+Completed 200 OK in 182ms (Views: 180.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "statuses" WHERE "statuses"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (6.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:47:51', '2016-08-12 06:47:51', 980190962, 14887631)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:47:51', '2016-08-12 06:47:51', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:47:51', '2016-08-12 06:47:51', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:47:51', '2016-08-12 06:47:51', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:47:51', '2016-08-12 06:47:51', 1027431151)[0m
+  [1m[35m (87.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (121.1ms)
+  Rendered statuses/edit.html.erb within layouts/application (152.4ms)
+Completed 200 OK in 268ms (Views: 261.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1  [["user_id", 14887631], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "statuses" SET "user_id" = ?, "updated_at" = ? WHERE "statuses"."id" = ?  [["user_id", 1027431151], ["updated_at", "2016-08-12 06:47:52.201398"], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1  [["user_id", 14887631], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (7.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:47:52.282465"], ["updated_at", "2016-08-12 06:47:52.282465"]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:47:52.302978"], ["updated_at", "2016-08-12 06:47:52.302978"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:51:16', '2016-08-12 06:51:16', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:51:16', '2016-08-12 06:51:16', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:51:16', '2016-08-12 06:51:16', 113629430, 1027431151)
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:51:16', '2016-08-12 06:51:16', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:51:16', '2016-08-12 06:51:16', 1027431151)[0m
+  [1m[35m (80.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1[0m  [["user_id", 14887631], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (118.2ms)
+  Rendered statuses/edit.html.erb within layouts/application (150.4ms)
+Completed 200 OK in 264ms (Views: 262.3ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1[0m  [["user_id", 14887631], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:51:16.792063"], ["updated_at", "2016-08-12 06:51:16.792063"]]
+  [1m[36m (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 2.9ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (5.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:51:16.844805"], ["updated_at", "2016-08-12 06:51:16.844805"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+  [1m[36m (5.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:53:05', '2016-08-12 06:53:05', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 06:53:05', '2016-08-12 06:53:05', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 06:53:05', '2016-08-12 06:53:05', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 06:53:05', '2016-08-12 06:53:05', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 06:53:05', '2016-08-12 06:53:05', 1027431151)[0m
+  [1m[35m (86.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+StatusesControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#index as HTML
+  Rendered statuses/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 143ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_for_the_current_user_when_logged_in
+-------------------------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:53:05.768198"], ["updated_at", "2016-08-12 06:53:05.768198"]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 41ms (ActiveRecord: 2.9ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (8.8ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------
+StatusesControllerTest: test_should_be_logged_in_to_post_a_status
+-----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"Hello"}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+-----------------------------------------------------------
+StatusesControllerTest: test_should_get_edit_when_logged_in
+-----------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  Rendered statuses/_form.html.erb (134.8ms)
+  Rendered statuses/edit.html.erb within layouts/application (171.9ms)
+Completed 200 OK in 204ms (Views: 198.4ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+StatusesControllerTest: test_should_destroy_status
+--------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+Processing by StatusesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.9ms)[0m  [1mDELETE FROM "statuses" WHERE "statuses"."id" = ?[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses
+Completed 302 Found in 7ms (ActiveRecord: 3.9ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (6.8ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------
+StatusesControllerTest: test_should_update_status
+-------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}, "id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1  [["user_id", 14887631], ["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------
+StatusesControllerTest: test_should_be_redirected_when_not_logged_in
+--------------------------------------------------------------------
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+Processing by StatusesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------------------------
+StatusesControllerTest: test_should_update_status_for_current_user_when_logged_in
+---------------------------------------------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1027431151]]
+Processing by StatusesController#update as HTML
+  Parameters: {"status"=>{"content"=>"MyText", "user_id"=>"1027431151"}, "id"=>"980190962"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mStatus Load (1.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."user_id" = ? AND "statuses"."id" = ? LIMIT 1[0m  [["user_id", 14887631], ["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/statuses/980190962
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------
+StatusesControllerTest: test_should_create_status_when_logged_in
+----------------------------------------------------------------
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses"
+Processing by StatusesController#create as HTML
+  Parameters: {"status"=>{"content"=>"MyText"}}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "MyText"], ["user_id", 14887631], ["created_at", "2016-08-12 06:53:06.080749"], ["updated_at", "2016-08-12 06:53:06.080749"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/statuses/980190963
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "statuses"[0m
+  [1m[35m (5.9ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+StatusesControllerTest: test_should_show_status
+-----------------------------------------------
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 14887631]]
+  [1m[36mStatus Load (2.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 14887631]]
+  Rendered statuses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
