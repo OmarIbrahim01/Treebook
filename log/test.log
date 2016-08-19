@@ -6834,3 +6834,81 @@ UserTest: test_a_user_should_have_unique_profile_name
   [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."profile_name" = 'OmarIbrahim' LIMIT 1[0m
   [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.0ms)[0m  [1mDELETE FROM "statuses"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 980190962, 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('MyText', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 298486374, 14887631)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "statuses" ("content", "created_at", "updated_at", "id", "user_id") VALUES ('ThisIsText', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 113629430, 1027431151)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Omar', 'Ibrahim', 'OmarIbrahim', 'omar@live.com', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 14887631)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Jim', 'Hopkins', 'jimhop88', 'jimhop@live.com', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 1027431151)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "profile_name", "email", "created_at", "updated_at", "id") VALUES ('Mike', 'TheFrog', 'mikethefrog', 'mike@live.com', '2016-08-12 08:37:37', '2016-08-12 08:37:37', 350169046)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "user_frindships"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "user_frindships" ("created_at", "updated_at", "id", "user_id", "friend_id") VALUES ('2016-08-12 08:37:37', '2016-08-12 08:37:37', 980190962, 14887631, 1027431151)
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UserTest: test_: User should have many friends. 
+------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------------
+UserTest: test_: User should have many user_friendships. 
+---------------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------------------------------
+UserTest: test_that_no_error_is_raised_when_trying_to_access_a_friend_list
+--------------------------------------------------------------------------
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------------
+UserTest: test_a_user_should_have_a_profile_name_without_spaces
+---------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'omar1@live.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."profile_name" = 'My profile name with spaces' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------
+UserTest: test_a_user_should_enter_a_first_name
+-----------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------
+UserTest: test_a_user_should_enter_a_profile_name
+-------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------
+UserTest: test_a_user_should_enter_a_last_name
+----------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."profile_name" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------------------
+UserTest: test_a_user_can_have_a_correctly_formatted_profile_name
+-----------------------------------------------------------------
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'omar1@live.com' LIMIT 1[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."profile_name" = 'omaribrahim_1' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------------------
+UserTest: test_a_user_should_have_unique_profile_name
+-----------------------------------------------------
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 14887631]]
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."profile_name" = 'OmarIbrahim' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m

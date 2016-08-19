@@ -1,5 +1,13 @@
 <div class="page-header">
 	<h1><%= @user.full_name %></h1>
+
+
+	<% if !(current_user.full_name == @user.full_name) %>
+	<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: "btn" %>
+	<% end %>
+
+
+
 	<li><%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-link pull-right" %></li>
 </div>
 
